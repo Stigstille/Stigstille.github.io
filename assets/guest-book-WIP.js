@@ -93,23 +93,23 @@ function fetchGuestBook_Entries() {
 // On Submit - Validating Text Before Sending For Profanities
 var Gform = document.getElementById("gform")
 Gform.addEventListener('submit', (e) => {
-//     validateRecaptcha();
+    validateRecaptcha();
 
 
 })
 
-// // Validate Recaptcha
-// function validateRecaptcha() {
-//     var response = grecaptcha.getResponse();
-//     if (response.length === 0) {
-//         // if Captcha not passed - do no nothing. 
-//         return false;
-//     } else {
-//         // if Captcha Passed - Validate Text For Swearing Etc. 
-//         validate_text();
-//         return true;
-//     }
-// }
+// Validate Recaptcha
+function validateRecaptcha() {
+    var response = grecaptcha.getResponse();
+    if (response.length === 0) {
+        // if Captcha not passed - do no nothing. 
+        return false;
+    } else {
+        // if Captcha Passed - Validate Text For Swearing Etc. 
+        validate_text();
+        return true;
+    }
+}
 
 // Convert 24 hour timestamp to 12 hour format - Work in Progress
 
@@ -174,15 +174,15 @@ function validate_text() {
 
 
 
-//         var response = grecaptcha.getResponse();
-//         if (response.length === 0) { // if Captcha is not complete
-//             // do nothing
+        var response = grecaptcha.getResponse();
+        if (response.length === 0) { // if Captcha is not complete
+            // do nothing
 
-//         } else { // add values to guestbook
+        } else { // add values to guestbook
 
-//             document.gform.submit();
+            document.gform.submit();
 
-//         }
+        }
 
 
         // Timeout is needed for form to properly submit with animation
@@ -246,9 +246,9 @@ function ResetSwearForm() {
       
       <input class="form-element short" type="text" name="${GOOGLE_ENTRY_ID_Guestbook}" id="${GOOGLE_ENTRY_ID_Guestbook}" placeholder="Enter Your Message Here" style="background: #5EC6C8" required>
       
-//          <label for="g-recaptcha"  class="aterisk_after">Captcha</label>      
-//    <div class="g-recaptcha"
-//        data-sitekey="${CaptchaKey}"></div> 
+         <label for="g-recaptcha"  class="aterisk_after">Captcha</label>      
+   <div class="g-recaptcha"
+       data-sitekey="${CaptchaKey}"></div> 
       
         <input class="form-button" type="submit" value="Submit">
         <input class="form-button" type="reset" value="Reset Form">
