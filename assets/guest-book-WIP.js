@@ -93,17 +93,23 @@ function fetchGuestBook_Entries() {
 // On Submit - Validating Text Before Sending For Profanities
 var Gform = document.getElementById("gform")
 Gform.addEventListener('submit', (e) => {
-     validateRecaptcha();
+//     validateRecaptcha();
 
 
 })
 
 // // Validate Recaptcha
- function validateRecaptcha() {
-
-        validate_text();
-        return true;
-}
+// function validateRecaptcha() {
+//     var response = grecaptcha.getResponse();
+//     if (response.length === 0) {
+//         // if Captcha not passed - do no nothing. 
+//         return false;
+//     } else {
+//         // if Captcha Passed - Validate Text For Swearing Etc. 
+//         validate_text();
+//         return true;
+//     }
+// }
 
 // Convert 24 hour timestamp to 12 hour format - Work in Progress
 
