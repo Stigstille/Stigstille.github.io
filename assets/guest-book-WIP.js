@@ -172,8 +172,17 @@ function validate_text() {
     } else // if no profanities found - check if Captcha is complete
     {
 
-	    document.gform.submit();
-    }
+
+
+//         var response = grecaptcha.getResponse();
+//         if (response.length === 0) { // if Captcha is not complete
+//             // do nothing
+
+//         } else { // add values to guestbook
+
+//             document.gform.submit();
+
+//         }
 
 
         // Timeout is needed for form to properly submit with animation
@@ -237,9 +246,9 @@ function ResetSwearForm() {
       
       <input class="form-element short" type="text" name="${GOOGLE_ENTRY_ID_Guestbook}" id="${GOOGLE_ENTRY_ID_Guestbook}" placeholder="Enter Your Message Here" style="background: #5EC6C8" required>
       
-/*          <label for="g-recaptcha"  class="aterisk_after">Captcha</label>      
+//          <label for="g-recaptcha"  class="aterisk_after">Captcha</label>      
 //    <div class="g-recaptcha"
-//        data-sitekey="${CaptchaKey}"></div> */
+//        data-sitekey="${CaptchaKey}"></div> 
       
         <input class="form-button" type="submit" value="Submit">
         <input class="form-button" type="reset" value="Reset Form">
