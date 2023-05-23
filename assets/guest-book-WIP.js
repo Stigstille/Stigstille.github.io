@@ -231,10 +231,6 @@ function ResetSwearForm() {
       
       <input class="form-element short" type="text" name="${GOOGLE_ENTRY_ID_Guestbook}" id="${GOOGLE_ENTRY_ID_Guestbook}" placeholder="Enter Your Message Here" style="background: #5EC6C8" required>
       
-/*          <label for="g-recaptcha"  class="aterisk_after">Captcha</label>      
-//    <div class="g-recaptcha"
-//        data-sitekey="${CaptchaKey}"></div> */
-      
         <input class="form-button" type="submit" value="Submit">
         <input class="form-button" type="reset" value="Reset Form">
  
