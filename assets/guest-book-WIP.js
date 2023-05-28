@@ -27,9 +27,9 @@ function fetchGuestBook_Entries() {
                 let ConvertedTime = tConvert(splitTime_1)
 
                 // Sanitize Data
-                let SantizeName = encodeHTML(sortedInput[i].Name)
+                let SantizeName = encodeHTML(sortedInput[i].Username)
 
-                let SantizeResponses = encodeHTML(sortedInput[i].Guestbook_Entry)
+                let SantizeResponses = encodeHTML(sortedInput[i].Mod_Link)
 
                 // Dis-allow unicode comments for spam 
                 SantizeName = SantizeName.replace(/[^\x00-\x7F]/g, "")
