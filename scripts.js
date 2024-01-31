@@ -1,3 +1,3 @@
 function sillyGoose() {
-    alert("I am an alert box!");
+    alert("You should have seen this coming -_-");
 }
