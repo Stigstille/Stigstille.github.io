@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
 
 body {
     margin:0;
     font-family: 'Gaegu', sans-serif;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 * {
@@ -13,11 +12,20 @@ body {
     scroll-behavior: smooth;
 }
 
+img,
+video,
+iframe,
+lite-youtube {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
 @media (max-width:500px) {
     .body-text {
         font-family: 'Arvo', sans-serif;
         font-size: .75em;
     }
+
     .bigHeader {
         font-size: 2em;
         font-family: 'Arvo', sans-serif;
@@ -27,19 +35,14 @@ body {
         justify-content: center;
         align-items: center;
     }
-    .CelesteSBS {
-        aspect-ratio: 16 / 10;
-    
-        padding-top: 1em;
-    }
-    
+
+    .CelesteSBS,
     .ChicorySBS {
         aspect-ratio: 16 / 10;
-    
         padding-top: 1em;
     }
     
-    .SideBySide iframe {
+    .SideBySide lite-youtube {
         width: 20em;
         height: 12.5em;
     }
@@ -51,7 +54,9 @@ body {
         margin: auto;
         font-family: 'Arvo', sans-serif;
     }
-    .body-text h1 {
+
+    .body-text h1,
+    .body-text h2 {
         text-align: center;
     }
 
@@ -65,23 +70,15 @@ body {
         align-items: center;
     }
 
-    .CelesteSBS {
-        aspect-ratio: 16 / 10;
-    
-        padding-right: 1em;
-        padding-top: 1em;
-        padding-bottom: 1em;
-    }
-    
+    .CelesteSBS,
     .ChicorySBS {
         aspect-ratio: 16 / 10;
-    
         padding-left: 1em;
         padding-top: 1em;
         padding-bottom: 1em;
     }
     
-    .SideBySide iframe {
+    .SideBySide lite-youtube {
         width: 20em;
         height: 12.5em;
     }
@@ -92,7 +89,6 @@ body {
 
     .ProPho {
         flex: 2;
-
         display: flex;
         justify-content: center;
         align-items: center;
@@ -124,16 +120,36 @@ body {
 	color: white;
 }
 
+.link-like-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.link-like-button:hover {
+    background-color: #007bff;
+}
+
 .header {
     padding: 1vh;
     background-color: #382c38;
     color: #8ee6e1;
 }
 
-.header h1 {
+.header h1,
+.footer h1 {
     font-size: 6vh;
 }
 
+.footer h1 {
+    text-align: center;
+}
 
 @keyframes welcomeColor {
     0% {
@@ -166,23 +182,13 @@ body {
     text-shadow: black 0px 0px 10px;
 }
 
-.MainBody{
+.MainBody {
     background-image: linear-gradient(-45deg,rgba(46, 34, 171, .7),rgba(208, 71, 159, .7),rgba(10, 114, 151, .7),rgba(231, 60, 126, .7)); 
 }
 
-.About {
-    padding: 1vh;
-    border-top:2px solid black;
-}
-
-.Projects {
-    padding: 1vh;
-    border-top:2px solid black;
-}
-
+.About,
+.Projects,
 .Speedruns {
     padding: 1vh;
     border-top:2px solid black;
-    
 }
-
