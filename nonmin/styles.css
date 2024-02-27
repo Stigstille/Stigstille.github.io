@@ -119,13 +119,20 @@ iframe {
 	color: white;
 }
 
-.ContactButtons button {
-    color: blue;
-    text-decoration: underline;
+.link-like-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.ContactButtons button:hover {
-    cursor: pointer;
+.link-like-button:hover {
+    background-color: #007bff;
 }
 
 .header {
