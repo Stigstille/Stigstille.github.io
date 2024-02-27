@@ -14,7 +14,8 @@ body {
 
 img,
 video,
-iframe {
+iframe,
+lite-youtube {
   max-inline-size: 100%;
   block-size: auto;
 }
