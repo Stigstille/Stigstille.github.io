@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
+		<meta charset="utf-8">
 		<title>Hello World!</title>
-		<link rel="stylesheet" href="./styles.css">
-
-		<meta property="og:title" content="Stigstille's Website/Portfolio"	/>
-		<meta property="og:type" content="website"	/>
-		<meta property="og:url" content="https://stigstille.uk"	/>
-		<meta property="og:image" content="https://stigstille.uk/assets/propho.jpg"	/>
-		<meta property="og:locale" content="en_US"	/>
-		<meta property="og:description" content="Hihi!! I'm Stigstille! I'm a silly little guy who enjoys playing video games. I have a **LOT** of projects that I work on, and I like to speedrun some videogames"	/>
-		<meta property="og:site_name" content="Stigstille's silly website"	/>
+		<meta name="theme-color" content="#FF00FF">
+		<meta property="og:locale" content="en_US">
+		<meta property="og:type" content="website">
+		<link rel="stylesheet" href="./styles.min.css">
+		<link rel="manifest" href="/assets/manifest.json">
+		<meta property="og:url" content="https://stigstille.uk">
+		<meta name="description" content="Stigstille's Website/Portfolio">
+		<meta property="og:title" content="Stigstille's Website/Portfolio">
+		<meta property="og:site_name" content="Stigstille's silly website">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta property="og:image" content="https://stigstille.uk/assets/propho.webp">
+		<link rel="apple-touch-icon" sizes="180x180" href="/assets/icon512_rounded.png">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lite-youtube-embed/src/lite-yt-embed.min.css">
+		<meta property="og:description" content="Hihi!! I'm Stigstille! I'm a silly little guy who enjoys playing video games. I have a **LOT** of projects that I work on, and I like to speedrun some videogames">
 	</head>
 	<body>
 		<div class="header">
@@ -22,32 +28,32 @@
 				<h2 class="center">Website</h2>
 			</div>
 		</div>
-		
 		<div class="MainBody">
 			<div class="Contact">
 				<div class="ProPho">
-					<img src="./assets/propho.jpg" alt="Stigstille's Profile Picture. (made by Marster772)"> 
+					<img src="./assets/propho.webp" alt="Stigstille's Profile Picture. (made by Marster772)" width="428" height="428"> 
 				</div>
 				<div class="ContactButtons">
-					<button onclick="sillyGoose()"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">My Favorite Video</a></button>
-					
-					<p id="please">&#128564; Offline... (Or I just fucked up my code)</p>
+					<button type="button" onclick="sillyGoose()" class="link-like-button"
+						data-video-link="https://www.youtube.com/watch?v=dQw4w9WgXcQ">My Favorite Video</button>
+					<p id="please">&#128564; Offline... (Or I just messed up my code)</p>
 				</div>
 			</div>
 			<div class="Construction">
 				<div class="body-text">
-					<h1>Hihi! I'm Stig! This is my website, but its currently under construction.</h1>
+					<h1>Hihi! I'm Stig! This is my website, but it's currently under construction.</h1>
 					<!-- <a rel="me" href="https://transgirl.cafe/@stigstille">Mastodon</a> -->
 				</div>
 			</div>
 			<div class="About" id="about">
 				<div class="body-text">
-					<h2>Hihi!! I'm Stigstille! I'm a silly little guy who enjoys playing video games.</h1>
+					<h2>Hihi!! I'm Stigstille! I'm a silly little guy who enjoys playing video games.</h2>
 				</div>
 			</div>
 			<div class="Projects" id="projects">
 				<div class="body-text">
-					<h1>I have a **LOT** of projects that I work on. Here is a list of them</h1>
+					<h1>I have a **LOT** of projects that I work on.</h1>
+					<h2>Here is a list of them.</h2>
 					<ul>
 						<li><h3><a href="https://github.com/Stigstille/Stigstille.github.io">This Website (html/css/js)</a></h3></li>
 						<li><h3><a href="https://gamebanana.com/wips/73847">Beginner Collab (Celeste)</a></h3></li>
@@ -62,19 +68,22 @@
 					<h1>I like speedrunning *some* games</h1>
 					<div class="SideBySide">
 						<div class="CelesteSBS">
-							<h3>Celeste any%</h3>
-							<iframe src="https://www.youtube.com/embed/VDD-QWPsu8c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+							<h2>Celeste any%</h2>
+							<lite-youtube videoid="VDD-QWPsu8c"></lite-youtube>
 						</div>
 						<div class="ChicorySBS">
-							<h3>Chicory any%</h3>
-							<iframe src="https://www.youtube.com/embed/2JWdvpqzQpo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+							<h2>Chicory any%</h2>
+							<lite-youtube videoid="2JWdvpqzQpo"></lite-youtube>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<script src="./scripts.js"></script>
-		<script src="./discordStat.js" type="module"></script> 
+		<div class="footer">
+			<h1><a href="#top">Go to top</a></h1>
+		</div>
+		<script src="./scripts.min.js"></script>
+		<script src="./discordStat.min.js" type="module"></script>
+		<script src="https://cdn.jsdelivr.net/npm/lite-youtube-embed/src/lite-yt-embed.min.js"></script>
 	</body>
 </html>
-

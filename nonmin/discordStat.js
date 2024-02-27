@@ -1,5 +1,4 @@
 const apiUrl = 'https://api.lanyard.rest/v1/users/1073248324024537208';
-
 // Make a GET request
 fetch(apiUrl)
   .then(response => {
@@ -18,4 +17,3 @@ fetch(apiUrl)
   .catch(error => {
     console.error('Error:', error);
   });
-
