@@ -2,8 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
 
 body {
-    margin:0;
-    font-family: 'Gaegu', sans-serif;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -120,6 +119,10 @@ lite-youtube {
 	color: white;
 }
 
+.ContactButtons {
+    font-family: 'Gaegu', sans-serif;
+}
+
 .link-like-button {
     display: inline-block;
     padding: 10px 20px;
@@ -145,6 +148,7 @@ lite-youtube {
 .header h1,
 .footer h1 {
     font-size: 6vh;
+    font-family: 'Gaegu', sans-serif;
 }
 
 .footer h1 {
@@ -180,6 +184,10 @@ lite-youtube {
     transform: translate(-50%, -50%);
     color: white;
     text-shadow: black 0px 0px 10px;
+}
+
+.welcomeChild .center {
+    font-family: 'Gaegu', sans-serif;
 }
 
 .MainBody {
