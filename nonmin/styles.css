@@ -139,7 +139,8 @@ lite-youtube {
     background-color: #007bff;
 }
 
-.header {
+.header,
+.footer {
     padding: 1vh;
     background-color: #382c38;
     color: #8ee6e1;
