@@ -139,8 +139,14 @@ lite-youtube {
     background-color: #007bff;
 }
 
-.header,
+.header {
+    padding: 1vh;
+    background-color: #382c38;
+    color: #8ee6e1;
+}
+
 .footer {
+    text-align: center;
     padding: 1vh;
     background-color: #382c38;
     color: #8ee6e1;
@@ -152,8 +158,9 @@ lite-youtube {
     font-family: 'Gaegu', sans-serif;
 }
 
-.footer h1 {
-    text-align: center;
+.footer h1 a {
+    text-decoration: none;
+    color: #8ee6e1;
 }
 
 @keyframes welcomeColor {
