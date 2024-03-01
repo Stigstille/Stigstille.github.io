@@ -8,11 +8,13 @@ fetch(apiUrl)
     return response.json();
   })
   .then(data => {
-    console.log(data.data.activities[0].id);
-    if (data.data.activities[0].id === "custom") {
+    if (data.data.activities[0].id !== undefined) {
+      console.log(data.data.activities[0].id);
+      if (data.data.activities[0].id === "custom") {
         document.getElementById("please").innerHTML = "Discord Status: " + data.data.activities[0].state;
+      }
+      console.log(data);
     }
-    console.log(data);
   })
   .catch(error => {
     console.error('Error:', error);
