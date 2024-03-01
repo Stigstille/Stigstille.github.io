@@ -207,4 +207,19 @@ lite-youtube {
 .Speedruns {
     padding: 1vh;
     border-top:2px solid black;
+    color: #000;
+}
+
+.ChicorySBS a,
+.CelesteSBS a {
+    color: #000;
+}
+
+.ChicorySBS p,
+.CelesteSBS p {
+    text-align: center;
+}
+
+.Projects a {
+    color: #000;
 }
