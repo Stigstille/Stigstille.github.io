@@ -14,10 +14,22 @@
 		<meta property="og:title" content="Stigstille's Website/Portfolio">
 		<meta property="og:site_name" content="Stigstille's silly website">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
 		<meta property="og:image" content="https://stigstille.uk/assets/propho.webp">
 		<link rel="apple-touch-icon" sizes="180x180" href="/assets/icon512_rounded.png">
 		<meta property="og:description" content="Hihi!! I'm Stigstille! I'm a silly little guy who enjoys playing video games. I have a **LOT** of projects that I work on, and I like to speedrun some videogames">
+		<!-- Content Security Policy, uncomment this when developing for the site -->
+		{# <meta http-equiv="Content-Security-Policy" content="default-src 'self'; 
+		        script-src 'self' 'unsafe-inline' 'nonce-placeholder'; 
+		        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; 
+		        img-src 'self' data: https:; 
+		        font-src 'self' https:; 
+		        object-src 'none'; 
+		        base-uri 'self'; 
+		        form-action 'self'; 
+				connect-src 'self' https://api.lanyard.rest; 
+				media-src 'self' https://download.stigstille.uk;"> #}
 	</head>
 	<body>
 		<div class="header">
@@ -92,7 +104,7 @@
 		<div class="footer">
 			<h1><a href="#top">Go to top</a></h1>
 		</div>
-		<script src="./scripts.min.js"></script>
-		<script src="./discordStat.min.js" type="module"></script>
+		<script src="./scripts.min.js" nonce="${nonce}"></script>
+		<script src="./discordStat.min.js" type="module" nonce="${nonce}"></script>
 	</body>
 </html>
