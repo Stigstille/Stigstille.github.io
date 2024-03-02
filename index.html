@@ -6,9 +6,12 @@
 		<meta name="theme-color" content="#FF00FF">
 		<meta property="og:locale" content="en_US">
 		<meta property="og:type" content="website">
-		<link rel="stylesheet" href="./styles.min.css">
+		<noscript>
+			<link rel="stylesheet" href="/styles.min.css">
+		</noscript>
 		<link rel="manifest" href="/assets/manifest.json">
 		<meta property="og:url" content="https://stigstille.uk">
+		<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
 		<meta name="description" content="Stigstille's Website/Portfolio">
 		<meta property="og:title" content="Stigstille's Website/Portfolio">
 		<meta property="og:site_name" content="Stigstille's silly website">
@@ -16,8 +19,8 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
 		<meta property="og:image" content="https://stigstille.uk/assets/propho.webp">
 		<link rel="apple-touch-icon" sizes="180x180" href="/assets/icon512_rounded.png">
+		<link rel="preload" href="styles.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 		<meta property="og:description" content="Hihi!! I'm Stigstille! I'm a silly little guy who enjoys playing video games. I have a **LOT** of projects that I work on, and I like to speedrun some videogames">
-		<link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
 	</head>
 	<body>
 		<div class="header">
@@ -72,6 +75,7 @@
 							<p><a href="https://www.speedrun.com/celeste/runs/zpp2r6xz">Speedrun.com Submission</a></p>
 							<video controls>
 								<source src="https://download.stigstille.uk/.website/assets/Celeste.mp4" type="video/mp4">
+								<track src="/assets/Celeste.srt" kind="subtitles" srclang="en" label="English">
 								Your browser does not support the video tag.
 							</video> 
 						</div>
@@ -80,6 +84,7 @@
 							<p><a href="https://www.speedrun.com/drawdog/runs/y8k01nwy">Speedrun.com Submission</a></p>
 							<video controls>
 								<source src="https://download.stigstille.uk/.website/assets/Chicory.mp4" type="video/mp4">
+								<track src="/assets/Chicory.srt" kind="subtitles" srclang="en" label="English">
 								Your browser does not support the video tag.
 							</video> 
 						</div>
