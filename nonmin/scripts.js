@@ -16,6 +16,13 @@ let nonce = generateNonce();
 scriptElements.forEach(function (script) {
     script.setAttribute('nonce', "nonce-" + nonce);
 });
+document.addEventListener('DOMContentLoaded', function () {
+    let favoriteVideoButton = document.getElementById('favorite-video-button');
+    favoriteVideoButton.addEventListener('click', function (event) {
+        event.preventDefault();
+        sillyGoose();
+    });
+});
 function sillyGoose() {
     alert("You should have seen this coming -_-");
 }
