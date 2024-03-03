@@ -8,4 +8,5 @@ Content-Security-Policy: default-src 'self';
     base-uri 'self'; 
     form-action 'self'; 
     connect-src 'self' https://api.lanyard.rest; 
-    media-src 'self' https://download.stigstille.uk;
+    media-src 'self' https://download.stigstille.uk; 
+    require-trusted-types-for 'script';
