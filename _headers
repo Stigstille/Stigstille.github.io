@@ -1,6 +1,6 @@
 /*
 Content-Security-Policy: default-src 'self'; 
-    script-src 'self' 'unsafe-inline' 'nonce-placeholder'; 
+    script-src 'self' 'unsafe-inline' 'nonce-CQk8c2NyaXB0IHNyYz0iLi9zY3JpcHRzLm1pbi5qcyI+PC9zY3JpcHQ+CgkJPHNjcmlwdCBzcmM9Ii4vZGlzY29yZFN0YXQubWluLmpzIiB0eXBlPSJtb2R1bGUiPjwvc2NyaXB0Pg=='; 
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; 
     img-src 'self' data: https:; 
     font-src 'self' https:; 
