@@ -21,7 +21,6 @@ updateStyleNonce();
 // function to do the above
 function updateStyleNonce() {
     let styles = document.querySelectorAll('style.darkreader.darkreader--sync');
-    let nonce = generateNonce();
     styles.forEach(function (style) {
         style.setAttribute('nonce', "nonce-" + nonce);
     });
