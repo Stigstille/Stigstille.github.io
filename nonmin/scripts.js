@@ -16,6 +16,15 @@ let nonce = generateNonce();
 scriptElements.forEach(function (script) {
     script.setAttribute('nonce', "nonce-" + nonce);
 });
+// Call the function so nonce attributes are set for dark reader styles too
+updateStyleNonce();
+// function to do the above
+function updateStyleNonce() {
+    let styles = document.querySelectorAll('style.darkreader.darkreader--sync');
+    styles.forEach(function (style) {
+        style.setAttribute('nonce', "nonce-" + nonce);
+    });
+}
 document.addEventListener('DOMContentLoaded', function () {
     let favoriteVideoButton = document.getElementById('favorite-video-button');
     favoriteVideoButton.addEventListener('click', function (event) {
