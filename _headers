@@ -1,5 +1,5 @@
 /*
-Content-Security-Policy: default-src 'self' 'strict-dynamic' https://fonts.googleapis.com https://fonts.gstatic.com https://api.lanyard.rest https://download.stigstille.uk https://stigstille.uk; 
+Content-Security-Policy: default-src 'self' 'strict-dynamic' 'sha256-iGVRMz1vIPczK8yVNtIHOPgnR8vHWkk0uahMXmsPrEs=' 'sha256-BqIQS/MFCvylGtbmJ8W8axCE7Iyv2vaxkS7vY1zCaMM=' https://fonts.googleapis.com https://fonts.gstatic.com https://api.lanyard.rest https://download.stigstille.uk https://stigstille.uk; 
     script-src 'unsafe-inline' 'strict-dynamic' 'sha256-iGVRMz1vIPczK8yVNtIHOPgnR8vHWkk0uahMXmsPrEs=' 'sha256-BqIQS/MFCvylGtbmJ8W8axCE7Iyv2vaxkS7vY1zCaMM=' https:; 
     script-src-elem 'unsafe-inline' 'strict-dynamic' 'sha256-iGVRMz1vIPczK8yVNtIHOPgnR8vHWkk0uahMXmsPrEs=' 'sha256-BqIQS/MFCvylGtbmJ8W8axCE7Iyv2vaxkS7vY1zCaMM=' https:; 
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com; 
