@@ -8,7 +8,7 @@ fetch(apiUrl)
     return response.json();
   })
   .then(data => {
-    if (data.data.activities[0].id !== undefined) {
+    if (data.data.activities[0] !== undefined) {
       // console.log(data.data.activities[0].id); <- uncomment if needed
       if (data.data.activities[0].id === "custom") {
         document.getElementById("please").innerHTML = "Discord Status: " + data.data.activities[0].state;
