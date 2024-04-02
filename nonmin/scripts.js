@@ -7,5 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 function sillyGoose() {
     alert("You should have seen this coming -_-");
-    window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+    setTimeout(function(){
+        window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+    }, 5000);
 }
