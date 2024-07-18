@@ -1,7 +1,7 @@
 /*
 Cache-Control: max-age=31536000, public, immutable
 Content-Security-Policy: default-src 'self' 'unsafe-inline' 'strict-dynamic' 'sha256-aAVpxhMpkmmp2hsuhIvh0T35K1jx4e5OMkl5CuZ36WA=' 'sha256-qjg+14aJCOUUmQulGzkJ71Q/xZCM6z5SCL1p2QJOD0o=' moz-extension://6f8d67b0-9bdb-4dc5-9f8e-f35e9502bb47 https://darkreader.org https://fonts.googleapis.com https://fonts.gstatic.com https://api.lanyard.rest https://download.stigstille.uk https://stigstille.uk https://static.cloudflareinsights.com; 
-    script-src 'unsafe-inline' 'strict-dynamic' 'sha256-aAVpxhMpkmmp2hsuhIvh0T35K1jx4e5OMkl5CuZ36WA=' 'sha256-qjg+14aJCOUUmQulGzkJ71Q/xZCM6z5SCL1p2QJOD0o=' https:; 
+    script-src 'unsafe-inline' 'strict-dynamic' 'sha256-aAVpxhMpkmmp2hsuhIvh0T35K1jx4e5OMkl5CuZ36WA=' 'sha256-qjg+14aJCOUUmQulGzkJ71Q/xZCM6z5SCL1p2QJOD0o='  https:; 
     script-src-elem 'unsafe-inline' 'strict-dynamic' 'sha256-aAVpxhMpkmmp2hsuhIvh0T35K1jx4e5OMkl5CuZ36WA=' 'sha256-qjg+14aJCOUUmQulGzkJ71Q/xZCM6z5SCL1p2QJOD0o=' https:; 
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com; 
     img-src 'self' data: https:; 
@@ -12,3 +12,4 @@ Content-Security-Policy: default-src 'self' 'unsafe-inline' 'strict-dynamic' 'sh
     connect-src 'self' https://api.lanyard.rest; 
     media-src 'self' https://download.stigstille.uk; 
     require-trusted-types-for 'script';
+    script-src static.cloudflareinsights.com; connect-src cloudflareinsights.com
