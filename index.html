@@ -1,100 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Hello World!</title>
-		<meta name="theme-color" content="#FF00FF">
-		<meta property="og:locale" content="en_US">
-		<meta property="og:type" content="website">
-		<link rel="stylesheet" href="/styles.min.css">
-		<link rel="manifest" href="/assets/manifest.json">
-		<meta property="og:url" content="https://stigstille.uk">
-		<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-		<meta name="description" content="Stigstille's Website/Portfolio">
-		<meta property="og:title" content="Stigstille's Website/Portfolio">
-		<meta property="og:site_name" content="Stigstille's silly website">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-		<meta property="og:image" content="https://stigstille.uk/assets/propho.webp">
-		<link rel="apple-touch-icon" sizes="180x180" href="/assets/icon512_rounded.png">
-		<meta property="og:description" content="Hihi!! I'm Stigstille! I'm a silly little goober who enjoys playing video games. I have a **LOT** of projects that I work on, and I like to speedrun some videogames">
-	</head>
-	<body>
-		<div class="header">
-			<h1>Website!!</h1>
-		</div>
-		<div class="welcome">
-			<div class="welcomeChild">
-				<h1 class="bigHeader">Stigstille's</h1>
-				<h2 class="center">Website</h2>
-			</div>
-		</div>
-		<div class="MainBody">
-			<div class="Contact">
-				<div class="ProPho">
-					<img src="./assets/propho.webp" alt="Stigstille's Profile Picture. (made by Marster772)" width="428" height="428"> 
-				</div>
-				<div class="ContactButtons">
-					<a href="https://matrix.to/#/@stigstille:matrix.stigstille.uk" id="favorite-video-button" class="link-like-button">Contact me on Matrix</a>
-					<p id="please">&#128564; Offline... (Or I just messed up my code)</p>
-				</div>
-			</div>
-			<div class="Construction">
-				<div class="body-text">
-					<h1>Hihi! I'm Stig! This is my website, but it's currently under construction.</h1>
-				</div>
-			</div>
-			<div class="About" id="about">
-				<div class="body-text">
-					<h2>Hihi!! I'm Stigstille! I'm a silly little goober who enjoys playing video games.</h2>
-				</div>
-			</div>
-			<div class="Projects" id="projects">
-				<div class="body-text">
-					<h1>I have a **LOT** of projects that I work on.</h1>
-					<h2>Here is a list of them.</h2>
-					<ul>
-						<li><h3><a href="https://github.com/Stigstille/Stigstille.github.io">This Website (html/css/js)</a></h3></li>
-						<li><h3><s><a href="https://gamebanana.com/mods/500584">Beginner Collab (Celeste)</a></s> (completed)</h3></li>
-						<li><h3><a href="https://discord.com/oauth2/authorize?client_id=1207428769082769418&permissions=51668448050801&scope=bot">Magic the Gathering Planechase bot (discord.js)</a></h3></li>
-						<li><h3><a href="https://twitch.tv/stigsmrowbot">A Simple Twitch Bot</a></h3></li>
-						<li><h3><a href="https://github.com/Stigstille/BurgyUploader">Burgy Uploader</a> <a href="https://twitch.tv/Jitio">(made for Jitio)</a></h3></li>
-						<!--<li><h3>GattinOS (Linux from Scratch)</h3></li>-->
-					</ul>
-					<p>ok... maybe not THAT much.</p>
-				</div>
-			</div>
-			<div class="Speedruns" id="speedruns">
-				<div class="body-text">
-					<h1>I like speedrunning *some* games</h1>
-					<div class="SideBySide">
-						<div class="CelesteSBS">
-							<h2>Celeste any%</h2>
-							<p><a href="https://www.speedrun.com/celeste/runs/zxq7xpqm">Speedrun.com Submission</a></p>
-							<video controls>
-								<source src="https://download.stigstille.uk/.website/assets/Celeste.mp4" type="video/mp4">
-								<track src="/assets/Celeste.srt" kind="captions" srclang="en" label="English">
-								Your browser does not support the video tag.
-							</video> 
-						</div>
-						<div class="ChicorySBS">
-							<h2>Chicory any%</h2>
-							<p><a href="https://www.speedrun.com/drawdog/runs/y8k01nwy">Speedrun.com Submission</a></p>
-							<video controls>
-								<source src="https://download.stigstille.uk/.website/assets/Chicory.mp4" type="video/mp4">
-								<track src="/assets/Chicory.srt" kind="captions" srclang="en" label="English">
-								Your browser does not support the video tag.
-							</video> 
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="footer">
-			<h1><a href="#top">Go to top</a></h1>
-		</div>
-		<script src="./scripts.min.js" integrity="sha256-aAVpxhMpkmmp2hsuhIvh0T35K1jx4e5OMkl5CuZ36WA=" crossorigin="anonymous"></script>
-		<script src="./discordStat.min.js" type="module" integrity="sha256-qjg+14aJCOUUmQulGzkJ71Q/xZCM6z5SCL1p2QJOD0o=" crossorigin="anonymous"></script>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello World!</title>
+    <meta name="theme-color" content="#FF00FF" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="./styles.min.css" />
+    <link rel="manifest" href="./assets/manifest.json" />
+    <meta property="og:url" content="https://stigstille.uk" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta name="description" content="Stigstille's Website/Portfolio" />
+    <meta property="og:title" content="Stigstille's Website/Portfolio" />
+    <meta property="og:site_name" content="Stigstille's silly website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <meta
+      property="og:image"
+      content="https://stigstille.uk/assets/propho.webp"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/icon512_rounded.png"
+    />
+    <meta
+      property="og:description"
+      content="Hihi!! I'm Stigstille! I'm a silly little goober who enjoys playing video games. I have a **LOT** of projects that I work on, and I like to speedrun some video games"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Website!!</h1>
+    </div>
+    <div class="welcome">
+      <div class="welcomeChild">
+        <h1 class="bigHeader">Stigstille's</h1>
+        <h2 class="center">Website</h2>
+      </div>
+    </div>
+    <div class="MainBody">
+      <div class="Contact MainElem">
+        <div class="ProPho">
+          <img
+            src="./assets/propho.webp"
+            alt="Stigstille's Profile Picture. (made by somefellaoverhere)"
+            width="428"
+            height="428"
+          />
+        </div>
+        <div class="ContactButtons">
+          <button
+            href="https://matrix.to/#/@stigstille:matrix.stigstille.uk"
+            id="favorite-video-button"
+            class="link-like-button"
+          >
+            Contact me on Matrix
+          </button>
+          <p id="please">&#128564; Offline... (Or I just messed up my code)</p>
+        </div>
+      </div>
+      <div class="Construction MainElem">
+        <div class="body-text">
+          <h1>
+            Hihi! I'm Stig! This is my website, but it's currently under
+            construction.
+          </h1>
+        </div>
+      </div>
+      <div class="About MainElem" id="about">
+        <div class="body-text">
+          <h2>
+            Hihi!! I'm Stigstille! I'm a silly little goober who enjoys playing
+            video games.
+          </h2>
+        </div>
+      </div>
+      <div class="Projects MainElem" id="projects">
+        <div class="body-text">
+          <h1>I have a **LOT** of projects that I work on.</h1>
+          <h2>Here is a list of them.</h2>
+          <ul>
+            <li>
+              <h3>
+                <a href="https://github.com/Stigstille/Stigstille.github.io"
+                  >This Website (html/css/js)</a
+                >
+              </h3>
+            </li>
+            <li>
+              <h3>
+                <s
+                  ><a href="https://gamebanana.com/mods/500584"
+                    >Beginner Collab (Celeste)</a
+                  ></s
+                >
+                (completed)
+              </h3>
+            </li>
+            <li>
+              <h3>
+                <a href="https://twitch.tv/stigsmrowbot">A Simple Twitch Bot</a>
+              </h3>
+            </li>
+            <li>
+              <h3>
+                <a href="https://github.com/Stigstille/BurgyUploader"
+                  >Burgy Uploader</a
+                >
+                <a href="https://twitch.tv/Jitio">(made for Jitio)</a>
+              </h3>
+            </li>
+            <!--<li><h3>GattinOS (Linux from Scratch)</h3></li>-->
+          </ul>
+          <p>ok... maybe not THAT much.</p>
+        </div>
+      </div>
+      <div class="Speedruns MainElem" id="speedruns">
+        <div class="body-text">
+          <h1>I like speedrunning *some* games</h1>
+          <div class="SideBySide">
+            <div class="CelesteSBS">
+              <h2>Celeste any%</h2>
+              <p>
+                <a href="https://www.speedrun.com/celeste/runs/zxq7xpqm"
+                  >Speedrun.com Submission</a
+                >
+              </p>
+              <video controls>
+                <source
+                  src="https://download.stigstille.uk/.website/assets/Celeste.mp4"
+                  type="video/mp4"
+                />
+                <track
+                  src="./assets/Celeste.srt"
+                  kind="captions"
+                  srclang="en"
+                  label="English"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="ChicorySBS">
+              <h2>Chicory any%</h2>
+              <p>
+                <a href="https://www.speedrun.com/drawdog/runs/y8k01nwy"
+                  >Speedrun.com Submission</a
+                >
+              </p>
+              <video controls>
+                <source
+                  src="https://download.stigstille.uk/.website/assets/Chicory.mp4"
+                  type="video/mp4"
+                />
+                <track
+                  src="./assets/Chicory.srt"
+                  kind="captions"
+                  srclang="en"
+                  label="English"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer MainElem">
+      <h1><a href="#top">Go to top</a></h1>
+    </div>
+    <script
+      src="./discordStat.min.js"
+      type="module"
+      integrity="sha256-qjg+14aJCOUUmQulGzkJ71Q/xZCM6z5SCL1p2QJOD0o="
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
